@@ -1,0 +1,65 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Robot Framework outputs
+# =========================
+output.xml
+log.html
+report.html
+results/
+*.xml
+*.log
+*.html
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+*.code-workspace
+
+# =========================
+# Pytest (if used later)
+# =========================
+.pytest_cache/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Chrome / Selenium artifacts
+# =========================
+selenium-debug.log
+chromedriver.log
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Cache / temporary files
+# =========================
+*.tmp
+*.bak
+*.swp
