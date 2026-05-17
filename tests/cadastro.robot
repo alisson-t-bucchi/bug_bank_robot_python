@@ -42,7 +42,7 @@ Realizar Primeiro Cadastro
     ...    ${MODAL_SUCESSO}
     ...    conta foi criada com sucesso
 
-    Capture Page Screenshot
+    # Capture Page Screenshot
 
     Sleep    3s
 
