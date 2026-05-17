@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.13 on win32)" generated="2026-05-17T16:36:24.107799" rpa="false" schemaversion="5">
+<suite id="s1" name="Bug Bank Robot Python" source="C:\Portfolio Projects\bug_bank_robot_python">
+<suite id="s1-s1" name="Tests" source="C:\Portfolio Projects\bug_bank_robot_python\tests">
+<suite id="s1-s1-s1" name="Cadastro" source="C:\Portfolio Projects\bug_bank_robot_python\tests\cadastro.robot">
+<test id="s1-s1-s1-t1" name="Realizar Primeiro Cadastro" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:24.548259" level="INFO">Opening browser 'chrome' to base url 'https://bugbank.netlify.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-17T16:36:24.547526" elapsed="1.306378"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-17T16:36:25.854928" elapsed="0.030325"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:25.886819" level="INFO">Clicking button 'xpath=//button[contains(.,'Registrar')]'.</msg>
+<arg>${BTN_REGISTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T16:36:25.885755" elapsed="0.101517"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:25.989546" level="INFO">Typing text 'teste.robot@email.com' into text field 'xpath=(//input[@type='email'])[2]'.</msg>
+<arg>${INPUT_EMAIL}</arg>
+<arg>teste.robot@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T16:36:25.988262" elapsed="0.154460"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:26.144760" level="INFO">Typing text 'Usuario Robot' into text field 'xpath=//input[@name='name']'.</msg>
+<arg>${INPUT_NOME}</arg>
+<arg>Usuario Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T16:36:26.143533" elapsed="0.102354"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:26.247592" level="INFO">Typing password into text field 'xpath=(//input[@name='password'])[2]'.</msg>
+<msg time="2026-05-17T16:36:26.289597" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${INPUT_PASSWORD}</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T16:36:26.246579" elapsed="0.110755"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:26.358549" level="INFO">Typing password into text field 'xpath=//input[@name='passwordConfirmation']'.</msg>
+<msg time="2026-05-17T16:36:26.394749" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${INPUT_CONFIRM_PASSWORD}</arg>
+<arg>123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T16:36:26.357852" elapsed="0.085620"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_CADASTRAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-17T16:36:26.444243" elapsed="0.025202"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_CADASTRAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-05-17T16:36:26.469922" elapsed="0.040306"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BTN_CADASTRAR}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-05-17T16:36:26.511274" elapsed="0.290727"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:26.803347" level="INFO">Clicking element 'xpath=//button[@type='submit' and contains(.,'Cadastrar')]'.</msg>
+<arg>${BTN_CADASTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T16:36:26.802701" elapsed="0.091216"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-17T16:36:26.895853" level="INFO">Clicking button 'xpath=//button[@type='submit' and contains(.,'Cadastrar')]'.</msg>
+<msg time="2026-05-17T16:36:28.193260" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-17T16:36:28.193888" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (929, 590)
+  (Session info: chrome=148.0.7778.167); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6fc941e35+2e8d45]
+	chromedriver!GetHandleVerifier [0x7ff6fc66e6c0+155d0]
+	chromedriver!(No symbol) [0x7ff6fc3bd57d]
+	chromedriver!(No symbol) [0x7ff6fc41f205]
+	chromedriver!(No symbol) [0x7ff6fc41ce1a]
+	chromedriver!(No symbol) [0x7ff6fc41a167]
+	chromedriver!(No symbol) [0x7ff6fc419017]
+	chromedriver!(No symbol) [0x7ff6fc40bc46]
+	chromedriver!(No symbol) [0x7ff6fc43fe6a]
+	chromedriver!(No symbol) [0x7ff6fc40b4c6]
+	chromedriver!(No symbol) [0x7ff6fc464c63]
+	chromedriver!(No symbol) [0x7ff6fc409d58]
+	chromedriver!(No symbol) [0x7ff6fc40ac43]
+	chromedriver!GetHandleVerifier [0x7ff6fc96dab9+3149c9]
+	chromedriver!GetHandleVerifier [0x7ff6fc96802b+30ef3b]
+	chromedriver!GetHandleVerifier [0x7ff6fc98c872+333782]
+	chromedriver!GetHandleVerifier [0x7ff6fc68b785+32695]
+	chromedriver!GetHandleVerifier [0x7ff6fc6942bc+3b1cc]
+	chromedriver!GetHandleVerifier [0x7ff6fc677f24+1ee34]
+	chromedriver!GetHandleVerifier [0x7ff6fc6780b4+1efc4]
+	chromedriver!GetHandleVerifier [0x7ff6fc65bf27+2e37]
+	KERNEL32!BaseThreadInitThunk [0x7fff8edee957+17]
+	ntdll!RtlUserThreadStart [0x7fff9002427c+2c]
+</msg>
+<arg>${BTN_CADASTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-17T16:36:26.894735" elapsed="1.314784">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (929, 590)
+  (Session info: chrome=148.0.7778.167); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6fc941e35+2e8d45]
+	chromedriver!GetHandleVerifier [0x7ff6fc66e6c0+155d0]
+	chromedriver!(No symbol) [0x7ff6fc3bd57d]
+	chromedriver!(No symbol) [0x7ff6fc41f205]
+	chromedriver!(No symbol) [0x7ff6fc41ce1a]
+	chromedriver!(No symbol) [0x7ff6fc41a167]
+	chromedriver!(No symbol) [0x7ff6fc419017]
+	chromedriver!(No symbol) [0x7ff6fc40bc46]
+	chromedriver!(No symbol) [0x7ff6fc43fe6a]
+	chromedriver!(No symbol) [0x7ff6fc40b4c6]
+	chromedriver!(No symbol) [0x7ff6fc464c63]
+	chromedriver!(No symbol) [0x7ff6fc409d58]
+	chromedriver!(No symbol) [0x7ff6fc40ac43]
+	chromedriver!GetHandleVerifier [0x7ff6fc96dab9+3149c9]
+	chromedriver!GetHandleVerifier [0x7ff6fc96802b+30ef3b]
+	chromedriver!GetHandleVerifier [0x7ff6fc98c872+333782]
+	chromedriver!GetHandleVerifier [0x7ff6fc68b785+32695]
+	chromedriver!GetHandleVerifier [0x7ff6fc6942bc+3b1cc]
+	chromedriver!GetHandleVerifier [0x7ff6fc677f24+1ee34]
+	chromedriver!GetHandleVerifier [0x7ff6fc6780b4+1efc4]
+	chromedriver!GetHandleVerifier [0x7ff6fc65bf27+2e37]
+	KERNEL32!BaseThreadInitThunk [0x7fff8edee957+17]
+	ntdll!RtlUserThreadStart [0x7fff9002427c+2c]
+</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MODAL_SUCESSO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-05-17T16:36:28.210182" elapsed="0.000272"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${MODAL_SUCESSO}</arg>
+<arg>conta foi criada com sucesso</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-05-17T16:36:28.212212" elapsed="0.000189"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-05-17T16:36:28.212853" elapsed="0.000246"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-17T16:36:28.213471" elapsed="0.000260"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-17T16:36:28.214080" elapsed="0.000269"/>
+</kw>
+<status status="FAIL" start="2026-05-17T16:36:24.443467" elapsed="3.771524">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (929, 590)
+  (Session info: chrome=148.0.7778.167); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6fc941e35+2e8d45]
+	chromedriver!GetHandleVerifier [0x7ff6fc66e6c0+155d0]
+	chromedriver!(No symbol) [0x7ff6fc3bd57d]
+	chromedriver!(No symbol) [0x7ff6fc41f205]
+	chromedriver!(No symbol) [0x7ff6fc41ce1a]
+	chromedriver!(No symbol) [0x7ff6fc41a167]
+	chromedriver!(No symbol) [0x7ff6fc419017]
+	chromedriver!(No symbol) [0x7ff6fc40bc46]
+	chromedriver!(No symbol) [0x7ff6fc43fe6a]
+	chromedriver!(No symbol) [0x7ff6fc40b4c6]
+	chromedriver!(No symbol) [0x7ff6fc464c63]
+	chromedriver!(No symbol) [0x7ff6fc409d58]
+	chromedriver!(No symbol) [0x7ff6fc40ac43]
+	chromedriver!GetHandleVerifier [0x7ff6fc96dab9+3149c9]
+	chromedriver!GetHandleVerifier [0x7ff6fc96802b+30ef3b]
+	chromedriver!GetHandleVerifier [0x7ff6fc98c872+333782]
+	chromedriver!GetHandleVerifier [0x7ff6fc68b785+32695]
+	chromedriver!GetHandleVerifier [0x7ff6fc6942bc+3b1cc]
+	chromedriver!GetHandleVerifier [0x7ff6fc677f24+1ee34]
+	chromedriver!GetHandleVerifier [0x7ff6fc6780b4+1efc4]
+	chromedriver!GetHandleVerifier [0x7ff6fc65bf27+2e37]
+	KERNEL32!BaseThreadInitThunk [0x7fff8edee957+17]
+	ntdll!RtlUserThreadStart [0x7fff9002427c+2c]
+</status>
+</test>
+<status status="FAIL" start="2026-05-17T16:36:24.173144" elapsed="4.050744"/>
+</suite>
+<status status="FAIL" start="2026-05-17T16:36:24.167273" elapsed="4.065340"/>
+</suite>
+<status status="FAIL" start="2026-05-17T16:36:24.117822" elapsed="4.120005"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Bug Bank Robot Python" id="s1" pass="0" fail="1" skip="0">Bug Bank Robot Python</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Bug Bank Robot Python.Tests</stat>
+<stat name="Cadastro" id="s1-s1-s1" pass="0" fail="1" skip="0">Bug Bank Robot Python.Tests.Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
